@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>তথ্য ও নীতিমালা - App Store BD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Theme Variables (Same as Index) */
+        :root { 
+            --primary: #00875F; 
+            --bg-color: #ffffff;
+            --text-main: #202124;
+            --text-sub: #5f6368;
+            --card-bg: #f8f9fa;
+            --border-color: #ddd;
+        }
+
+        body.dark-mode {
+            --bg-color: #121212;
+            --text-main: #e8eaed;
+            --text-sub: #9aa0a6;
+            --card-bg: #1f1f1f;
+            --border-color: #2d2d2d;
+        }
+
+        body { margin: 0; font-family: 'Hind Siliguri', 'Roboto', sans-serif; background: var(--bg-color); color: var(--text-main); padding: 20px; transition: 0.3s; }
+
+        /* Header */
+        .header { display: flex; align-items: center; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; }
+        .back-btn { font-size: 22px; color: var(--text-main); text-decoration: none; cursor: pointer; }
+        .title { font-size: 20px; font-weight: 700; color: var(--primary); margin: 0; }
+
+        /* Content Cards */
+        .info-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+        }
+        .info-card h3 { margin: 0 0 10px 0; font-size: 18px; color: var(--primary); display: flex; align-items: center; gap: 8px; }
+        .info-card p { margin: 0; font-size: 14px; line-height: 1.6; color: var(--text-sub); }
+
+        /* Links */
+        .social-links { display: flex; gap: 15px; margin-top: 15px; }
+        .s-btn { 
+            text-decoration: none; font-size: 24px; color: var(--text-sub); transition: 0.2s; 
+        }
+        .s-btn:hover { color: var(--primary); transform: scale(1.1); }
+        .fa-facebook { color: #1877F2; }
+        .fa-telegram { color: #0088cc; }
+        .fa-envelope { color: #EA4335; }
+
+        .footer { text-align: center; font-size: 12px; color: var(--text-sub); margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+        <h1 class="title">তথ্য ও নীতিমালা</h1>
+    </div>
+
+    <div class="info-card">
+        <h3><i class="fas fa-store"></i> আমাদের সম্পর্কে</h3>
+        <p>App Store BD হলো একটি উন্মুক্ত প্ল্যাটফর্ম যেখানে আপনি জনপ্রিয় সব অ্যাপ এবং গেমসের কালেকশন পাবেন। আমাদের লক্ষ্য হলো ব্যবহারকারীদের জন্য সহজ ও নিরাপদ অ্যাপ ডাউনলোডের ব্যবস্থা করা।</p>
+    </div>
+
+    <div class="info-card">
+        <h3><i class="fas fa-shield-alt"></i> গোপনীয়তা নীতি</h3>
+        <p>আমরা ব্যবহারকারীর তথ্যের সুরক্ষাকে সর্বোচ্চ অগ্রাধিকার দিই। এই সাইটটি কোনো ব্যক্তিগত তথ্য সংগ্রহ করে না। সকল অ্যাপের ডাউনলোড লিংক অফিসিয়াল সোর্স বা বিশ্বস্ত সার্ভার থেকে সংগ্রহ করা হয়েছে।</p>
+    </div>
+
+    <div class="info-card">
+        <h3><i class="fas fa-code"></i> ডেভেলপার তথ্য</h3>
+        <p>এই ওয়েবসাইটটি ডিজাইন এবং ডেভেলপ করা হয়েছে আধুনিক ওয়েব টেকনোলজি ব্যবহার করে। এটি সম্পূর্ণ রেসপনসিভ এবং ডার্ক মোড সাপোর্টেড।</p>
+    </div>
+
+    <div class="info-card">
+        <h3><i class="fas fa-headset"></i> যোগাযোগ করুন</h3>
+        <p>আপনার কোনো মতামত বা অভিযোগ থাকলে আমাদের সাথে যোগাযোগ করতে পারেন।</p>
+        <div class="social-links">
+            <a href="#" class="s-btn"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="s-btn"><i class="fab fa-telegram"></i></a>
+            <a href="mailto:support@example.com" class="s-btn"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 App Store BD. All rights reserved.
+    </div>
+
+    <script>
+        // Check for Dark Mode Preference from index.html
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+
+</body>
+</html>
