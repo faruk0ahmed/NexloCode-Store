@@ -2,11 +2,11 @@ var allApps = [
     {
         "id": 1764874062659,
         "category": "app",
-        "name": "ITG: Invisible Text Generator",
+        "name": "Magic Text: Invisible Text Generator",
         "dev": "NexloCode",
         "icon": "https://i.ibb.co.com/MDdKgf8L/logo.png",
         "rating": "4.5",
-        "link": "https://www.mediafire.com/file/exhf1f446xjw1p4/ITG_Magic_Text.apk/file",
+        "link": "https://www.mediafire.com/file/5ia0xuq4g1bndyb/Magic_Text.apk/file",
         "screenshots": [
             "https://i.ibb.co.com/rRNjdxJm/Screenshot-2025-12-05-00-33-24-791-com-nexlocode-itg.jpg",
             "https://i.ibb.co.com/9mm36RRC/Screenshot-2025-12-05-00-33-35-626-com-nexlocode-itg.jpg"
